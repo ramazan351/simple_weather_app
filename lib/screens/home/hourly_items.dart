@@ -9,7 +9,7 @@ class MyHourlyItemWidget extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.symmetric(
-          horizontal: size.width * 0.02, vertical: size.height * 0.02),
+          horizontal: size.width * 0.01, vertical: size.height * 0.02),
       decoration: BoxDecoration(
           border: Border.all(color: whiteColor, width: 1),
           borderRadius: BorderRadius.circular(46)),
@@ -26,9 +26,7 @@ class MyHourlyItemWidget extends StatelessWidget {
   Text infoText(BuildContext context, String text) {
     return Text(
       text,
-      style: TextStyle(
-          color: whiteColor,
-          fontSize: Theme.of(context).textTheme.headline6?.fontSize),
+      style: TextStyle(color: whiteColor, fontSize: 16),
     );
   }
 }

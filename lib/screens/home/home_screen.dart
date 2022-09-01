@@ -2,8 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:simple_weather_project/const_values/colors.dart';
+import 'package:simple_weather_project/custom_paints/button_bg.dart';
 import 'package:simple_weather_project/screens/home/head_widget.dart';
-import 'package:simple_weather_project/screens/hourly_items.dart';
+import 'package:simple_weather_project/screens/home/hourly_items.dart';
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
               children: [
                 const Expanded(flex: 2, child: WeatherHeadInfos()),
                 Expanded(
-                    flex: 4,
+                    flex: 6,
                     child: Stack(
                       children: [
                         Image.asset("assets/images/house.png"),
@@ -72,6 +73,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                                       thickness: 1.5,
                                     ),
                                     Expanded(
+                                      flex: 3,
                                       child: ListView.builder(
                                         itemCount: 7,
                                         scrollDirection: Axis.horizontal,
@@ -84,6 +86,66 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                                             child: const MyHourlyItemWidget(),
                                           );
                                         },
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 2,
+                                      child: Align(
+                                        alignment: Alignment.bottomCenter,
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: IconButton(
+                                                  onPressed: () {},
+                                                  icon: Image.asset(
+                                                      "assets/images/location_symbol.png")),
+                                            ),
+                                            Expanded(
+                                              flex: 2,
+                                              child: Stack(
+                                                children: [
+                                                  LayoutBuilder(
+                                                    builder: (context, _) {
+                                                      return SizedBox(
+                                                        width: _.maxWidth,
+                                                        height: 100,
+                                                        child: CustomPaint(
+                                                          painter:
+                                                              ButtonBackgroundPaint(),
+                                                        ),
+                                                      );
+                                                    },
+                                                  ),
+                                                  Positioned.fill(
+                                                    child: Container(
+                                                      margin: EdgeInsets.all(
+                                                          size.width * 0.05),
+                                                      decoration: BoxDecoration(
+                                                          color: whiteColor,
+                                                          shape:
+                                                              BoxShape.circle,
+                                                          border: Border.all(
+                                                              width: 2,
+                                                              color:
+                                                                  buttonColor)),
+                                                      child: Icon(
+                                                        Icons.add,
+                                                        color: buttonColor,
+                                                        size: size.width * 0.1,
+                                                      ),
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: IconButton(
+                                                  onPressed: () {},
+                                                  icon: Image.asset(
+                                                      "assets/images/stars_drawer.png")),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],

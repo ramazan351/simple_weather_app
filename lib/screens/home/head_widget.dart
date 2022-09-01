@@ -15,26 +15,26 @@ class WeatherHeadInfos extends StatelessWidget {
         Text(
           "Gaziantep",
           style: TextStyle(
-              fontSize: Theme.of(context).textTheme.headline4?.fontSize,
+              fontSize: Theme.of(context).textTheme.headline5?.fontSize,
               color: whiteColor),
         ),
         Text(
           "19°",
           style: TextStyle(
-              fontSize: Theme.of(context).textTheme.headline2?.fontSize,
+              fontSize: Theme.of(context).textTheme.headline3?.fontSize,
               fontWeight: FontWeight.w300,
               color: whiteColor),
         ),
         Text(
           "Çoğunlukla açık",
           style: TextStyle(
-              fontSize: Theme.of(context).textTheme.headline5?.fontSize,
+              fontSize: Theme.of(context).textTheme.headline6?.fontSize,
               color: grayColor.withOpacity(0.6)),
         ),
         Text(
           "H:32° L:18°",
           style: TextStyle(
-              fontSize: Theme.of(context).textTheme.headline4?.fontSize,
+              fontSize: Theme.of(context).textTheme.headline5?.fontSize,
               color: whiteColor),
         )
       ],
