@@ -11,13 +11,15 @@ class MyHourlyItemWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(
           horizontal: size.width * 0.01, vertical: size.height * 0.02),
       decoration: BoxDecoration(
+          color: primaryColor.withOpacity(0.2),
           border: Border.all(color: whiteColor, width: 1),
           borderRadius: BorderRadius.circular(46)),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           infoText(context, "09 AM"),
           Image.asset("assets/images/MoonCloudMidRain.png"),
-          infoText(context, "32"),
+          infoText(context, "32° "),
         ],
       ),
     );
