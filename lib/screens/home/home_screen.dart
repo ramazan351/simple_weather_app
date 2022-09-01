@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:simple_weather_project/const_values/colors.dart';
 import 'package:simple_weather_project/custom_paints/button_bg.dart';
 import 'package:simple_weather_project/screens/home/head_widget.dart';
@@ -97,8 +98,8 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                                             Expanded(
                                               child: IconButton(
                                                   onPressed: () {},
-                                                  icon: Image.asset(
-                                                      "assets/images/location_symbol.png")),
+                                                  icon: SvgPicture.asset(
+                                                      "assets/images/location_symbol.svg")),
                                             ),
                                             Expanded(
                                               flex: 2,
@@ -141,8 +142,8 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                                             Expanded(
                                               child: IconButton(
                                                   onPressed: () {},
-                                                  icon: Image.asset(
-                                                      "assets/images/stars_drawer.png")),
+                                                  icon: SvgPicture.asset(
+                                                      "assets/images/stars_drawer.svg")),
                                             )
                                           ],
                                         ),
