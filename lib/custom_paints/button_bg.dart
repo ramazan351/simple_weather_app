@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:simple_weather_project/const_values/colors.dart';
+import 'package:simple_weather_project/constants/colors.dart';
 
 class ButtonBackgroundPaint extends CustomPainter {
   @override
@@ -30,7 +30,7 @@ class ButtonBackgroundPaint extends CustomPainter {
       segmentHeight * 9,
       segmentWidth * 4,
       0,
-      10 * segmentWidth,
+      segmentWidth * 10,
       0,
     );
     path.lineTo(segmentWidth * 14, 0);
