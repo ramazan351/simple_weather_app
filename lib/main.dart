@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_weather_project/screens/home/home_screen.dart';
-import 'package:simple_weather_project/widgets/my_drawer.dart';
+import 'package:simple_weather_project/screens/app_drawer/drawer_logic.dart';
 
 void main() {
   runApp(const MyApp());

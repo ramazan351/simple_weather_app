@@ -7,7 +7,7 @@ import 'package:simple_weather_project/constants/values.dart';
 import 'package:simple_weather_project/custom_paints/button_bg.dart';
 import 'package:simple_weather_project/screens/home/head_widget.dart';
 import 'package:simple_weather_project/screens/home/hourly_items.dart';
-import 'package:simple_weather_project/widgets/my_drawer.dart';
+import 'package:simple_weather_project/screens/app_drawer/drawer_logic.dart';
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key}) : super(key: key);
