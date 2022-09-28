@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_weather_project/const_values/colors.dart';
+import 'package:simple_weather_project/constants/colors.dart';
 
 class WeatherHeadInfos extends StatelessWidget {
   const WeatherHeadInfos({
