@@ -15,7 +15,7 @@
 ## Screens
 <p align= "center" >
   <img width ="400"
-       src = "https://github.com/ramazan351/simple_weather_app/blob/master/assets/ss/Screenshot_20220928-160017.png" alt ="">
+       src = "https://github.com/ramazan351/simple_weather_app/blob/master/assets/ss/home_page.png" alt ="">
 <br>
   <h3 align = "center"> Home Page </h3>
 </p>
@@ -23,10 +23,10 @@
 <br>
 <p align= "center" >
   <img width= "400"
-       src = "https://github.com/ramazan351/simple_weather_app/blob/master/assets/ss/Screenshot_20220928-160017.png" alt ="">
+       src = "https://github.com/ramazan351/simple_weather_app/blob/master/assets/ss/drawer.png" alt ="">
        
 <br>
-  <h3 style=" align = "center"; color:#17093C; "> Drawer </h3>
+  <h3 align = "center" > Drawer </h3>
 </p>   
 ## 🤝 Contributing
 
